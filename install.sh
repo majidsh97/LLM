@@ -12,6 +12,8 @@ pip install transformers
 pip install peft
 pip install bitsandbytes
 pip install datasets
+pip install flash-attn
+#"unsloth[cu121-ampere-torch231] @ git+https://github.com/unslothai/unsloth.git"
 #for storage
 #cip-quota
 #ncdu
