@@ -10,6 +10,8 @@ source myenv/bin/activate
 #https://stackoverflow.com/questions/58119823/jupyter-notebooks-in-visual-studio-code-does-not-use-the-active-virtual-environm
 pip install transformers
 pip install peft
+pip install bitsandbytes
+pip install datasets
 #for storage
 #cip-quota
 #ncdu
