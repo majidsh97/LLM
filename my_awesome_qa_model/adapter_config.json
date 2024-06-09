@@ -18,11 +18,14 @@
     "qa_outputs"
   ],
   "peft_type": "LORA",
-  "r": 9,
+  "r": 16,
   "rank_pattern": {},
   "revision": null,
   "target_modules": [
-    "query"
+    "query",
+    "dense",
+    "key",
+    "value"
   ],
   "task_type": "QUESTION_ANS",
   "use_dora": false,
