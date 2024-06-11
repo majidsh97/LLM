@@ -23,6 +23,9 @@ pip install flash-attn
 
 #install deepspeed goto 
 #before AttributeError: 'DeepSpeedCPUAdam' object has no attribute 'ds_opt_adam'
+#https://github.com/microsoft/DeepSpeed/issues/889
 #The error show: cannot make a dir in /tmp/torch_extensions/build for cpu_adam.
 #So I change the DEFAULT_TORCH_EXTENSION_PATH in the file /anaconda3/envs/XXXXX/lib/python3.6/site-packages/deepspeed/ops/op_builder/builder.py
 #git clone deepspeed then goto folder deepspeed write DS_BUILD_CPU_ADAM=1 pip install 
+#set the environment path of g++
+
