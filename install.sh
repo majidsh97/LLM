@@ -2,6 +2,7 @@ mkdir /proj/ciptmp/ix05ogym
 # source ~/.bashrc 
 # source ~/.bashrc
 cd /proj/ciptmp/ix05ogym
+#/var/tmp
 python3.11 -m venv myenv --system-site-packages
 source myenv/bin/activate
 #deactivate
@@ -29,3 +30,8 @@ pip install flash-attn
 #git clone deepspeed then goto folder deepspeed write DS_BUILD_CPU_ADAM=1 pip install 
 #set the environment path of g++
 
+pip freeze > requirements.txt
+pip install --upgrade pip setuptools wheel
+pip install bertopic --no-cache-dir
+pip uninstall hdbscan -y
+pip install hdbscan --no-cache-dir --no-binary :all: --no-build-isolation
