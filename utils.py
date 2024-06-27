@@ -25,7 +25,8 @@ KEYWORDS={
        'salary':['salary'],
        'sex':['sex','gender'], 
        'availablefrom':['noticeprieod'],
-       'file':['type="file"'],
+       #'file':['type="file"'],
+       
        'captcha':['captcha'],
        'submit':['apply','type="submit"'],
        'cancel':['cancel'],
