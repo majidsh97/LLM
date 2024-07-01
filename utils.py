@@ -65,7 +65,8 @@ KEYWORDS={
 
        }
 
-LABEL_INDEX_TO_KEY = [KEYWORDS.keys()]
+LABEL_INDEX_TO_KEY = list(KEYWORDS.keys())
+
 i =0
 LABEL_KEY_TO_INDEX = {}
 for key in KEYWORDS:
