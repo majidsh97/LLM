@@ -33,7 +33,7 @@ KEYWORDS={
        'custom question':['question'],
        'privacy':['agree'],
 
-       'recommend':['recommendation'],
+       'recommender':['recommendation'],
        'work here before':['workherebefore'],
        'find us':['find'],
        'dropbox':['dropbox'],
