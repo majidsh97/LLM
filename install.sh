@@ -35,3 +35,10 @@ pip install --upgrade pip setuptools wheel
 pip install bertopic --no-cache-dir
 pip uninstall hdbscan -y
 pip install hdbscan --no-cache-dir --no-binary :all: --no-build-isolation
+
+
+You can open settings by pressing Ctrl+, or by clicking on the gear icon in the bottom left corner and selecting Settings.
+Search for Python Path Settings:
+
+In the settings search bar, type python.autoComplete.extraPaths.
+
