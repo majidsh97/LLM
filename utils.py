@@ -1,74 +1,133 @@
-KEYWORDS={
-        #----------------------form--------------------------------------
-       'first name':['firstname','first_name','forename','first','first-name'],
-       'last name':['lastname','last_name','surename','last','last-name'] ,
-       'email':['email','e-mail','username','user_name','user-name','type="email"'], 
-       'password':['password'], 
-       'cv':['cv','resume','curriculum','vitae'],
-       'birth date':['birthdate','birth','dateofbirth','date-of-birth','birth-date'],
-       'phone number':['phonenumber','phone','telephone','tel'],
-       'house number':['hausnummer'],
-       'resident country':['resident','country'],
-       'citizen country':['citizen','citizenship','city'],
-       'transcript':['transcript'],
-       'cover letter':['coverletter','cover', 'letter'], 
-       'picture':['picture'], 
-       'address':['address','location'],
-       'linkedin':['linkedin'],
-       'github':['github'],
-       'xing':['xing'],
-       'twitter':['twitter'],
-       'website':['website'],
-       'zip':['postalcode','zip','zip-code','postal'],
-       'city':['city'],
-       'salary':['salary'],
-       'sex':['sex','gender'], 
-       'available from':['noticeprieod'],
-       #'file':['type="file"'],
-       
-       'captcha':['captcha'],
-       'submit':['apply','type="submit"'],
-       'cancel':['cancel'],
-       'fake':['fake'],
-       'custom question':['question'],
-       'privacy':['agree'],
+KEYWORDS = {
+    # ----------------------form--------------------------------------
+    "first name": ["firstname", "first_name", "forename", "first", "first-name"],
+    "last name": ["lastname", "last_name", "surename", "last", "last-name"],
+    "email": ["email", "e-mail", "username", "user_name", "user-name", 'type="email"'],
+    "password": ["password"],
+    "cv": ["cv", "resume", "curriculum", "vitae"],
+    "birth date": ["birthdate", "birth", "dateofbirth", "date-of-birth", "birth-date"],
+    "phone number": ["phonenumber", "phone", "telephone", "tel"],
+    "house number": ["hausnummer"],
+    "resident country": ["resident", "country"],
+    "citizen country": ["citizen", "citizenship", "city"],
+    "transcript": ["transcript"],
+    "cover letter": ["coverletter", "cover", "letter"],
+    "picture": ["picture"],
+    "address": ["address", "location"],
+    "linkedin": ["linkedin"],
+    "github": ["github"],
+    "xing": ["xing"],
+    "twitter": ["twitter"],
+    "website": ["website"],
+    "zip": ["postalcode", "zip", "zip-code", "postal"],
+    "city": ["city"],
+    "salary": ["salary"],
+    "sex": ["sex", "gender"],
+    "available from": ["noticeprieod"],
+    #'file':['type="file"'],
+    "captcha": ["captcha"],
+    "submit": ["apply", 'type="submit"'],
+    "cancel": ["cancel"],
+    "fake": ["fake"],
+    "custom question": ["question"],
+    "privacy": ["agree"],
+    "recommender": ["recommendation"],
+    "work here before": ["workherebefore"],
+    "find us": ["find"],
+    "dropbox": ["dropbox"],
+    "google drive": ["google drive"],
+    "work hours": ["workhours"],
+    "workduration": [""],
+    "visa": ["visa"],
+    #'eligible':['eligible'],
+    "german language level": ["germanlevel"],
+    "company": [""],  # current company
+    "willing to relocate": [""],
+    "university enrollment": [],  # are a student?
+    "english language level": [],
+    # important about job
+    # important about jobplace?
+    # -------------------------------------------------------------------
+    # -----------------------------------btns ---------------------------
+    "login": ["login", "sign"],
+    "username": ["username"],
+    "register": ["register", "sign"],
+    "cookie": ["cookie"],
+    "next": ["apply now", "next"],
+    "search": [],
+    "other": ["other"],
+    "newsletter": [],
+    #'apply':['apply'],
+    # -------------------------------------------------------------------
+}
 
-       'recommender':['recommendation'],
-       'work here before':['workherebefore'],
-       'find us':['find'],
-       'dropbox':['dropbox'],
-       'google drive':['google drive'],
-       'work hours':['workhours'],
-       'workduration':[''],
-       'visa':['visa'],
-       #'eligible':['eligible'],
-       'german language level':['germanlevel'],
-       'company':[''],#current company
-       'willing to relocate':[''],
-       'university enrollment':[],#are a student?
-       'english language level':[],
-       #important about job
-       #important about jobplace?
-              
-       #-------------------------------------------------------------------
-       #-----------------------------------btns ---------------------------
-       'login':['login','sign'],
-       'username':['username'],
-       'register':['register','sign'],
-       'cookie':['cookie'],
-       'next':['apply now','next'],
-       'search':[],
-        'other':['other'],
-        'newsletter':[]
-       #'apply':['apply'],
-       #-------------------------------------------------------------------
+# LABEL_INDEX_TO_KEY = list(KEYWORDS.keys())
 
-       }
-
-LABEL_INDEX_TO_KEY = list(KEYWORDS.keys())
-
-i =0
+LABEL_INDEX_TO_KEY = [
+    "birth",
+    "major",
+    "cookie",
+    "search",
+    "city",
+    "English language level",
+    "years of experience",
+    "forgot password",
+    "next",
+    "username",
+    "address",
+    "website language",
+    "latitude",
+    "distance",
+    "cv",
+    "phone number",
+    "transcript",
+    "english language level",
+    "register",
+    "pronoun",
+    "university",
+    "cancel",
+    "job",
+    "company",
+    "longitude",
+    "age",
+    "house number",
+    "skill",
+    "italian language level",
+    "visa",
+    "title",
+    "twitter",
+    "captcha",
+    "civic number",
+    "zip",
+    "find us",
+    "recommender",
+    "available from",
+    "linkedin",
+    "submit",
+    "email",
+    "salary",
+    "newsletter",
+    "first name",
+    "German language level",
+    "show password",
+    "last name",
+    "ethnicity",
+    "github",
+    "cover letter",
+    "graduation year",
+    "sex",
+    "password",
+    "privacy",
+    "login",
+    "job title",
+    "subscribe",
+    "picture",
+    "country",
+    "xing",
+    "career level",
+]
+i = 0
 LABEL_KEY_TO_INDEX = {}
 for key in KEYWORDS:
-            LABEL_KEY_TO_INDEX[key] =i
-            i+=1 
+    LABEL_KEY_TO_INDEX[key] = i
+    i += 1
