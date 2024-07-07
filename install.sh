@@ -1,4 +1,5 @@
 mkdir /proj/ciptmp/ix05ogym
+/local/python3.11-Anaconda3-2024.03-RSU-VI/bin/python3 
 # source ~/.bashrc 
 # source ~/.bashrc
 cd /proj/ciptmp/ix05ogym
