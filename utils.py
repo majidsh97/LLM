@@ -223,3 +223,9 @@ def get_query_html(f):
     
     
     
+def print_df(df):
+    for i,x in df.iterrows():
+        for k,v in x:
+            print(f'{k}: {v}')
+        
+        print('------------------------------------------------')
