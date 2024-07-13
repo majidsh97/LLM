@@ -1,10 +1,16 @@
 mkdir /proj/ciptmp/ix05ogym
-/local/python3.11-Anaconda3-2024.03-RSU-VI/bin/python3 
+/local/python3.11-Anaconda3-2024.03-RSU-VI/bin/python3 -m venv myenv --system-site-packages
+nano ~/.bashrc 
+alias python='/proj/ciptmp/ix05ogym/myenv/bin/python'
 # source ~/.bashrc 
+source myenv/bin/activate
+#python  -m ipykernel install --user --name=myenv
+
 # source ~/.bashrc
 cd /proj/ciptmp/ix05ogym
 #/var/tmp
 python3.11 -m venv myenv --system-site-packages
+/local/python3.11-Anaconda3-2024.03-RSU-VI/bin/python3 -m venv myenv --system-site-packages
 source myenv/bin/activate
 #deactivate
 #vscode env
@@ -44,3 +50,5 @@ Search for Python Path Settings:
 In the settings search bar, type python.autoComplete.extraPaths.
 
 https://github.com/huggingface/peft/issues/349
+
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
