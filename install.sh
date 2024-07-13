@@ -43,3 +43,4 @@ Search for Python Path Settings:
 
 In the settings search bar, type python.autoComplete.extraPaths.
 
+https://github.com/huggingface/peft/issues/349
