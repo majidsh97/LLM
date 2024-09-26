@@ -1,4 +1,4 @@
-import json
+import json_repair as json
 def extract_json_between_markers(llm_output):
     json_start_marker = "```json"
     json_end_marker = "```"
@@ -9,10 +9,10 @@ def extract_json_between_markers(llm_output):
         start_index += len(json_start_marker)  # Move past the marker
         end_index = llm_output.find(json_end_marker, start_index)
     else:
-        return "JSON markers not found"
+        raise Exception("JSON markers not found")
 
     if end_index == -1:
-        return " End marker not found"
+        raise Exception(" End marker not found")
 
     # Extract the JSON string
     json_string = llm_output[start_index:end_index].strip()
@@ -20,5 +20,4 @@ def extract_json_between_markers(llm_output):
         parsed_json = json.loads(json_string)
         return parsed_json
     except json.JSONDecodeError as e:
-        return  e.msg
-        
+        raise  e.msg
