@@ -1,19 +1,18 @@
-d
-encoding_model: cl100k_base
+#encoding_model: cl100k_base
 skip_workflows: []
 llm:
-  api_key: ${GRAPHRAG_API_KEY}
+  api_key: ${GEMINI_API_KEY}
   type: openai_chat # or azure_openai_chat
   model: gpt-4o
   model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
   # request_timeout: 180.0
-  api_base: http://localhost:8000/v1/chat/completions
+  api_base: http://localhost:8080/ #v1/chat/completions
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
   # deployment_name: <azure_model_deployment_name>
-  # tokens_per_minute: 150_000 # set a leaky bucket throttle
-  # requests_per_minute: 10_000 # set a leaky bucket throttle
+  tokens_per_minute: 350_000 # set a leaky bucket throttle
+  requests_per_minute: 10 # set a leaky bucket throttle
   # max_retries: 10
   # max_retry_wait: 10.0
   # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
@@ -24,7 +23,7 @@ llm:
 
 parallelization:
   stagger: 0.3
-  # num_threads: 50 # the number of threads to use for parallel processing
+  num_threads: 1 # the number of threads to use for parallel processing
 
 async_mode: threaded # or asyncio
 
@@ -35,15 +34,15 @@ embeddings:
   # batch_size: 16 # the number of documents to send in a single request
   # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
   llm:
-    api_key: ${GRAPHRAG_API_KEY}
+    api_key: ${GEMINI_API_KEY}
     type: openai_embedding # or azure_openai_embedding
-    model: text-embedding-ada-002
-    # api_base: https://<instance>.openai.azure.com
+    model: text
+    api_base: http://localhost:8080/
     # api_version: 2024-02-15-preview
     # organization: <organization_id>
     # deployment_name: <azure_model_deployment_name>
-    # tokens_per_minute: 150_000 # set a leaky bucket throttle
-    # requests_per_minute: 10_000 # set a leaky bucket throttle
+    tokens_per_minute: 350_000 # set a leaky bucket throttle
+    requests_per_minute: 10 # set a leaky bucket throttle
     # max_retries: 10
     # max_retry_wait: 10.0
     # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
@@ -117,7 +116,7 @@ cluster_graph:
   max_cluster_size: 10
 
 embed_graph:
-  enabled: false # if true, will generate node2vec embeddings for nodes
+  enabled: true # if true, will generate node2vec embeddings for nodes
   # num_walks: 10
   # walk_length: 40
   # window_size: 2
@@ -125,10 +124,10 @@ embed_graph:
   # random_seed: 597832
 
 umap:
-  enabled: false # if true, will generate UMAP embeddings for nodes
+  enabled: true # if true, will generate UMAP embeddings for nodes
 
 snapshots:
-  graphml: false
+  graphml: true
   raw_entities: false
   top_level_nodes: false
 

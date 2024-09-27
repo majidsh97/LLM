@@ -1,8 +1,13 @@
+#https://docs.litellm.ai/docs/proxy_server
+#https://pytorch.org/serve/getting_started.html
+#https://docs.litellm.ai/docs/providers/custom_llm_server#
+
 model_list:
   - model_name: gpt-4o
     litellm_params:
       model: gemini/gemini-1.5-flash
       api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
+      drop_params: true
   - model_name: text
     litellm_params:
       model: gemini/text-embedding-004
