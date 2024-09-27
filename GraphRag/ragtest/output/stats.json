@@ -1,101 +1,108 @@
 {
-    "total_runtime": 13433.851312875748,
+    "total_runtime": 141.2595088481903,
     "num_documents": 1,
     "input_load_time": 0,
     "workflows": {
         "create_base_text_units": {
-            "overall": 0.1418476104736328,
-            "0_orderby": 0.00146484375,
-            "1_zip": 0.0016908645629882812,
-            "2_aggregate_override": 0.0028421878814697266,
-            "3_chunk": 0.10850691795349121,
-            "4_select": 0.0021941661834716797,
-            "5_unroll": 0.0026979446411132812,
-            "6_rename": 0.001966238021850586,
-            "7_genid": 0.0034716129302978516,
-            "8_unzip": 0.00247955322265625,
-            "9_copy": 0.0055389404296875,
-            "10_filter": 0.007424116134643555
+            "overall": 0.1385509967803955,
+            "0_orderby": 0.0014948844909667969,
+            "1_zip": 0.0017807483673095703,
+            "2_aggregate_override": 0.002875089645385742,
+            "3_chunk": 0.1079399585723877,
+            "4_select": 0.002185821533203125,
+            "5_unroll": 0.0028111934661865234,
+            "6_rename": 0.0019731521606445312,
+            "7_genid": 0.0035636425018310547,
+            "8_unzip": 0.0025587081909179688,
+            "9_copy": 0.002234220504760742,
+            "10_filter": 0.0074503421783447266
         },
         "create_base_extracted_entities": {
-            "overall": 3610.286053419113,
-            "0_entity_extract": 3610.2608156204224,
-            "1_merge_graphs": 0.022657155990600586
+            "overall": 0.19239163398742676,
+            "0_entity_extract": 0.13608551025390625,
+            "1_snapshot": 0.0168612003326416,
+            "2_merge_graphs": 0.028238773345947266,
+            "3_snapshot_rows": 0.00854635238647461
         },
         "create_summarized_entities": {
-            "overall": 5383.891581058502,
-            "0_summarize_descriptions": 5383.888710975647
+            "overall": 4.518874168395996,
+            "0_summarize_descriptions": 4.506311655044556,
+            "1_snapshot_rows": 0.009401321411132812
         },
         "create_base_entity_graph": {
-            "overall": 0.15799522399902344,
-            "0_cluster_graph": 0.15144777297973633,
-            "1_select": 0.0034279823303222656
+            "overall": 1.632150650024414,
+            "0_cluster_graph": 0.10630607604980469,
+            "1_snapshot_rows": 0.03215980529785156,
+            "2_embed_graph": 1.4421446323394775,
+            "3_snapshot_rows": 0.036313772201538086,
+            "4_select": 0.011599302291870117
         },
         "create_final_entities": {
-            "overall": 877.570475101471,
-            "0_unpack_graph": 0.04189467430114746,
-            "1_rename": 0.0038547515869140625,
-            "2_select": 0.004065513610839844,
-            "3_dedupe": 0.004253864288330078,
-            "4_rename": 0.004087686538696289,
-            "5_filter": 0.011883020401000977,
-            "6_text_split": 0.006918668746948242,
-            "7_drop": 0.0045588016510009766,
-            "8_merge": 0.040940284729003906,
-            "9_text_embed": 877.4261498451233,
-            "10_drop": 0.0049800872802734375,
-            "11_filter": 0.013285636901855469
+            "overall": 4.029488563537598,
+            "0_unpack_graph": 0.04229164123535156,
+            "1_rename": 0.0045757293701171875,
+            "2_select": 0.004816293716430664,
+            "3_dedupe": 0.004937171936035156,
+            "4_rename": 0.004749298095703125,
+            "5_filter": 0.0132293701171875,
+            "6_text_split": 0.007623910903930664,
+            "7_drop": 0.0052335262298583984,
+            "8_merge": 0.04188394546508789,
+            "9_text_embed": 3.870988368988037,
+            "10_drop": 0.00590968132019043,
+            "11_filter": 0.01479339599609375
         },
         "create_final_nodes": {
-            "overall": 0.5666952133178711,
-            "0_layout_graph": 0.26969480514526367,
-            "1_unpack_graph": 0.048658132553100586,
-            "2_unpack_graph": 0.16152286529541016,
-            "3_filter": 0.021491289138793945,
-            "4_drop": 0.0057752132415771484,
-            "5_select": 0.00581812858581543,
-            "6_rename": 0.005852222442626953,
-            "7_join": 0.014226198196411133,
-            "8_convert": 0.021413326263427734,
-            "9_rename": 0.007027864456176758
+            "overall": 4.804295063018799,
+            "0_layout_graph": 4.467493534088135,
+            "1_unpack_graph": 0.1853482723236084,
+            "2_unpack_graph": 0.048425912857055664,
+            "3_filter": 0.024535179138183594,
+            "4_drop": 0.006957292556762695,
+            "5_select": 0.0068988800048828125,
+            "6_snapshot": 0.01017308235168457,
+            "7_rename": 0.006931304931640625,
+            "8_convert": 0.022758007049560547,
+            "9_join": 0.01128244400024414,
+            "10_rename": 0.007428884506225586
         },
         "create_final_communities": {
-            "overall": 0.11687588691711426,
-            "0_create_final_communities": 0.11044549942016602
+            "overall": 0.11964869499206543,
+            "0_create_final_communities": 0.11225295066833496
         },
         "create_final_relationships": {
-            "overall": 0.06348514556884766,
-            "0_create_final_relationships_pre_embedding": 0.04679059982299805,
-            "1_create_final_relationships_post_embedding": 0.009760141372680664
+            "overall": 0.06780171394348145,
+            "0_create_final_relationships_pre_embedding": 0.049079179763793945,
+            "1_create_final_relationships_post_embedding": 0.010811805725097656
         },
         "create_final_text_units": {
-            "overall": 0.04682016372680664,
-            "0_create_final_text_units_pre_embedding": 0.01875591278076172,
-            "1_select": 0.011678695678710938
+            "overall": 0.04031538963317871,
+            "0_create_final_text_units_pre_embedding": 0.015784025192260742,
+            "1_select": 0.008219242095947266
         },
         "create_final_community_reports": {
-            "overall": 3559.052055120468,
-            "0_prepare_community_reports_nodes": 0.016515016555786133,
-            "1_prepare_community_reports_edges": 0.010396242141723633,
-            "2_restore_community_hierarchy": 0.010917901992797852,
-            "3_prepare_community_reports": 0.15407967567443848,
-            "4_create_community_reports": 3558.8439614772797,
-            "5_window": 0.008403778076171875
+            "overall": 122.69901204109192,
+            "0_prepare_community_reports_nodes": 0.01723027229309082,
+            "1_prepare_community_reports_edges": 0.011319637298583984,
+            "2_restore_community_hierarchy": 0.01180410385131836,
+            "3_prepare_community_reports": 0.1371901035308838,
+            "4_create_community_reports": 122.49926090240479,
+            "5_window": 0.013155937194824219
         },
         "create_base_documents": {
-            "overall": 0.09571194648742676,
-            "0_unroll": 0.009109973907470703,
-            "1_select": 0.008764505386352539,
-            "2_rename": 0.008482933044433594,
-            "3_join": 0.010919332504272461,
-            "4_aggregate_override": 0.009227752685546875,
-            "5_join": 0.012694358825683594,
-            "6_rename": 0.009198665618896484,
-            "7_convert": 0.01903700828552246
+            "overall": 0.10273885726928711,
+            "0_unroll": 0.00994420051574707,
+            "1_select": 0.009516477584838867,
+            "2_rename": 0.009529829025268555,
+            "3_join": 0.011934518814086914,
+            "4_aggregate_override": 0.01043391227722168,
+            "5_join": 0.011814117431640625,
+            "6_rename": 0.009729385375976562,
+            "7_convert": 0.02024054527282715
         },
         "create_final_documents": {
-            "overall": 0.028016328811645508,
-            "0_rename": 0.018684864044189453
+            "overall": 0.02009296417236328,
+            "0_rename": 0.010154008865356445
         }
     }
 }

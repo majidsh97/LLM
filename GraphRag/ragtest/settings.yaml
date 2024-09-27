@@ -128,8 +128,8 @@ umap:
 
 snapshots:
   graphml: true
-  raw_entities: false
-  top_level_nodes: false
+  raw_entities: true
+  top_level_nodes: true
 
 local_search:
   # text_unit_prop: 0.5
