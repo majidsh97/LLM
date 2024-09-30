@@ -8,15 +8,19 @@ model_list:
       model: gemini/gemini-1.5-flash
       api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
       drop_params: true
+    rpm: 13
   - model_name: text
     litellm_params:
       model: gemini/text-embedding-004
       api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
       drop_params: true
+    rpm: 15
   - model_name: hf
     litellm_params:
       model: huggingface/microsoft/codebert-base
       api_key: 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
       drop_params: true
+    rpm: 5
+
 
 
