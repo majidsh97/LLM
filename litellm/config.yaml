@@ -25,16 +25,19 @@ model_list:
       rpm: 5
 
 litellm_settings:
-  num_retries: 1 # retry call 3 times on each model_name (e.g. zephyr-beta)
-  request_timeout: 10 # raise Timeout error if call takes longer than 10s. Sets litellm.request_timeout 
+  #num_retries: 1 # retry call 3 times on each model_name (e.g. zephyr-beta)
+  request_timeout: 60 # raise Timeout error if call takes longer than 10s. Sets litellm.request_timeout 
   #fallbacks: [{"zephyr-beta": ["gpt-3.5-turbo"]}] # fallback to gpt-3.5-turbo if call fails num_retries 
   #context_window_fallbacks: [{"zephyr-beta": ["gpt-3.5-turbo-16k"]}, {"gpt-3.5-turbo": ["gpt-3.5-turbo-16k"]}] # fallback to gpt-3.5-turbo-16k if context window error
-  allowed_fails: 2 # cooldown model if it fails > 1 call in a minute. 
+  allowed_fails: 0 # cooldown model if it fails > 1 call in a minute. 
   cooldown_time: 60
   max_parallel_requests: 1
 
 router_settings:
   #routing_strategy: least-busy
-  num_retries: 4
+  num_retries: 2
   timeout: 60
+  allowed_fails: 0 # cooldown model if it fails > 1 call in a minute. 
+  cooldown_time: 60
+  max_parallel_requests: 1
 
