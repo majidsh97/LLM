@@ -4,18 +4,34 @@
 #https://docs.litellm.ai/docs/proxy/configs
 
 model_list:
+  #majid.sharghi97
   - model_name: gpt-4o
     litellm_params:
       model: gemini/gemini-1.5-flash
       api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
       drop_params: true
-      rpm: 2
+      rpm: 10
+  #majid.sharghi.business
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyDT1outDubmZK6np6NUzfoQyn28ONEdPmM
+      drop_params: true
+      rpm: 10
+  #theluxuy
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyCc5XpCCtgLC8lKrJPout4exMnigIDAXkQ
+      drop_params: true
+      rpm: 10
+  
   - model_name: text
     litellm_params:
       model: gemini/text-embedding-004
       api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
       drop_params: true
-      rpm: 2
+      
 
   - model_name: hf
     litellm_params:
@@ -25,19 +41,19 @@ model_list:
       rpm: 5
 
 litellm_settings:
-  #num_retries: 1 # retry call 3 times on each model_name (e.g. zephyr-beta)
+  num_retries: 1 # retry call 3 times on each model_name (e.g. zephyr-beta)
   request_timeout: 60 # raise Timeout error if call takes longer than 10s. Sets litellm.request_timeout 
   #fallbacks: [{"zephyr-beta": ["gpt-3.5-turbo"]}] # fallback to gpt-3.5-turbo if call fails num_retries 
   #context_window_fallbacks: [{"zephyr-beta": ["gpt-3.5-turbo-16k"]}, {"gpt-3.5-turbo": ["gpt-3.5-turbo-16k"]}] # fallback to gpt-3.5-turbo-16k if context window error
-  allowed_fails: 0 # cooldown model if it fails > 1 call in a minute. 
+  allowed_fails: 1 # cooldown model if it fails > 1 call in a minute. 
   cooldown_time: 60
   max_parallel_requests: 1
 
 router_settings:
-  #routing_strategy: least-busy
-  num_retries: 2
+  routing_strategy: simple-shuffle
+  num_retries: 3
   timeout: 60
-  allowed_fails: 0 # cooldown model if it fails > 1 call in a minute. 
+  allowed_fails: 1 # cooldown model if it fails > 1 call in a minute. 
   cooldown_time: 60
   max_parallel_requests: 1
 
