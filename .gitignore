@@ -4,3 +4,5 @@ my_awesome_qa_model/checkpoint-500
 __pycache__/
 *.pkl
 *.csv
+*.pdf
+*.jpg
