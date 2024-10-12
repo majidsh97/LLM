@@ -1,0 +1,124 @@
+@prefix : <http://emmo.info/domain-atomistic#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://emmo.info/domain-atomistic> a owl:Ontology ;
+    dcterms:abstract "An EMMO-based domain ontology for atomistic and electronic modelling.Atomistic is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0)."@en ;
+    dcterms:contributor "SINTEF"@en ;
+    dcterms:creator "Francesca L. Bleken"@en,
+        "Jesper Friis"@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+    dcterms:publisher "EMMC ASBL"@en ;
+    dcterms:title "Atomistic"@en ;
+    rdfs:comment """Contacts:
+Jesper Friis
+SINTEF
+email: jesper.friis@sintef.no
+
+Francesca L. Bleken
+SINTEF
+email: francesca.l.bleken@sintef.no"""@en,
+        "The EMMO requires FaCT++ reasoner plugin in order to visualize allinferences and class hierarchy (ctrl+R hotkey in Protege)."@en,
+        "This ontology is generated with data from the ASE Python package."@en ;
+    owl:imports <https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/versions/1.0.0-beta/emmo-inferred-chemistry2.ttl> ;
+    owl:versionIRI <http://emmo.info/0.0.1/domain-atomistic> ;
+    owl:versionInfo "0.0.1"@en .
+
+:21c6ff70-4800-555e-b642-74ba2aaeb039 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical dimensionality of charge density."@en ;
+    rdfs:subClassOf ns1:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue "T+1 L-3 M0 I+1 Θ0 N0 J0"^^rdf:PlainLiteral ;
+            owl:onProperty ns1:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+    skos:prefLabel "ChargeDensityDimension"@en .
+
+:83a69cf2-00c1-58b8-915b-76cb3549890a a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An efficient computional method for solving the many-electron
+(time-independent) Schrödinger equation."""@en ;
+    rdfs:subClassOf ns1:EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11 ;
+    skos:prefLabel "DensityFunctionalTheory"@en .
+
+:b65fe3b6-8477-5508-a066-2f7edcf25126 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The Schrödinger equation for a fictious "Kohn-Sham" system of
+non-interacting electrons that generates the same charge
+density as the real interacting system."""@en ;
+    rdfs:comment "This is the equation that is solved with density functional theory."^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom :513b1e52-5e37-5ba0-b4cc-89369f9b41c5 ],
+        :acaafcb6-b65f-5996-93ed-2f486f5f2b30 ;
+    skos:prefLabel "KohnShamEquation"@en .
+
+:fac61002-4a3d-5810-a430-ad5dad69c9a0 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The full time-dependent Schrödinger equation."@en ;
+    rdfs:subClassOf :c4dd4450-cc80-5de4-a8d6-db0651115a2c ;
+    skos:altLabel "TimeDependentSchrödingerEquation"@en ;
+    skos:prefLabel "TimeDependentSchrodingerEquation"@en .
+
+:08fd7117-66ac-5b6d-b65e-34a826675877 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A mathematical operator with a physical interpretation."@en ;
+    rdfs:subClassOf ns1:EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa ;
+    skos:prefLabel "PhysicalOperator"@en .
+
+:42244404-98d1-582a-8fc0-3cdd2a9b3df6 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An operator corresponding to the sum of the kinetic energies plus
+the potential energies for all the particles in the system."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :42812fef-145a-56e9-9c18-72bd32214455 ;
+            owl:someValuesFrom ns1:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+        :08fd7117-66ac-5b6d-b65e-34a826675877,
+        ns1:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ;
+    skos:prefLabel "Hamiltonian"@en .
+
+:42812fef-145a-56e9-9c18-72bd32214455 a owl:ObjectProperty ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a mathematical (or physical) operator to its eigenvalue."@en ;
+    rdfs:domain ns1:EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa ;
+    rdfs:subPropertyOf ns1:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+    skos:prefLabel "hasEigenvalue"@en .
+
+:513b1e52-5e37-5ba0-b4cc-89369f9b41c5 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric charge per volume."@en ;
+    rdfs:subClassOf ns1:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
+    skos:prefLabel "ChargeDensity"@en .
+
+:acaafcb6-b65f-5996-93ed-2f486f5f2b30 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """If the external potential does not depende on time, the Schrödinger
+equation can be reduced to this time-independent form."""@en ;
+    rdfs:subClassOf :c4dd4450-cc80-5de4-a8d6-db0651115a2c ;
+    skos:altLabel "TimeIndependentSchrödingerEquation"@en ;
+    skos:prefLabel "TimeIndependentSchrodingerEquation"@en .
+
+:df750ce7-fda1-5e9b-ba32-db96ec170577 a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A mathematical description of the quantum state of an isolated
+quantum system. A wave function is a function of the degrees
+of freedom corresponding to some maximal set of commuting
+observables. Once such a representation is chosen, the wave
+function can be derived from the quantum state."""@en ;
+    rdfs:subClassOf ns1:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    skos:prefLabel "WaveFunction"@en .
+
+:c4dd4450-cc80-5de4-a8d6-db0651115a2c a owl:Class ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A linear partial differential equation describing the wave
+function of a quantum-mechanical system.
+
+The exact form of the Schrödinger equation depends on the
+physical situation.  The most general form is the
+time-dependent Schrödinger equation."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom :df750ce7-fda1-5e9b-ba32-db96ec170577 ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom :42244404-98d1-582a-8fc0-3cdd2a9b3df6 ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom ns1:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+        ns1:EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3 ;
+    skos:altLabel "SchrödingerEquation"@en ;
+    skos:prefLabel "SchrodingerEquation"@en .
+
