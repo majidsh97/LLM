@@ -1,0 +1,168 @@
+<h1 id="swstacks">swStacks</h1>
+<p>Documentation of <a
+href="http://www.nsmntx.org/2020/08/swStacks#">http://www.nsmntx.org/2020/08/swStacks#</a></p>
+<h2 id="relations">Relations</h2>
+<h2 id="classes">Classes</h2>
+<h3 id="angularjs">AngularJS</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q2849803">http://www.wikidata.org/entity/Q2849803</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#MEANstack">MEAN Stack</a></li>
+</ul>
+<h3 id="apache-http-server-apache-http-server">Apache HTTP Server
+{#apache http server}</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q11354">http://www.wikidata.org/entity/Q11354</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="Apollo">Apollo (Data Graph Platform)</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="#Apollo">http://www.nsmntx.org/2020/08/swStacks#Apollo</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#GRANDstack">GRAND Stack</a></li>
+</ul>
+<h3 id="express.js">Express.js</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q16878131">http://www.wikidata.org/entity/Q16878131</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#MEANstack">MEAN Stack</a></li>
+</ul>
+<h3 id="GRANDstack">GRAND Stack</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="#GRANDstack">http://www.nsmntx.org/2020/08/swStacks#GRANDstack</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#SoftwareStack">Software Stack</a></li>
+</ul>
+<h3 id="graphql">GraphQL</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q25104949">http://www.wikidata.org/entity/Q25104949</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#GRANDstack">GRAND Stack</a></li>
+</ul>
+<h3 id="LAMPstack">LAMP Stack</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="#LAMPstack">http://www.nsmntx.org/2020/08/swStacks#LAMPstack</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#SoftwareStack">Software Stack</a></li>
+</ul>
+<h3 id="linux">Linux</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q388">http://www.wikidata.org/entity/Q388</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="MEANstack">MEAN Stack</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="#MEANstack">http://www.nsmntx.org/2020/08/swStacks#MEANstack</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#SoftwareStack">Software Stack</a></li>
+</ul>
+<h3 id="mariadb">MariaDB</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q787177">http://www.wikidata.org/entity/Q787177</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="mongodb">MongoDB</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q1165204">http://www.wikidata.org/entity/Q1165204</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#MEANstack">MEAN Stack</a></li>
+</ul>
+<h3 id="mysql">MySQL</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q850">http://www.wikidata.org/entity/Q850</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="neo4j">Neo4j</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q1628290">http://www.wikidata.org/entity/Q1628290</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#GRANDstack">GRAND Stack</a></li>
+</ul>
+<h3 id="node.js">Node.js</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q756100">http://www.wikidata.org/entity/Q756100</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#MEANstack">MEAN Stack</a></li>
+</ul>
+<h3 id="php">PHP</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q59">http://www.wikidata.org/entity/Q59</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="perl">Perl</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q42478">http://www.wikidata.org/entity/Q42478</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="python">Python</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q28865">http://www.wikidata.org/entity/Q28865</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#LAMPstack">LAMP Stack</a></li>
+</ul>
+<h3 id="react">React</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="http://www.wikidata.org/entity/Q19399674">http://www.wikidata.org/entity/Q19399674</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="#GRANDstack">GRAND Stack</a></li>
+</ul>
+<h3 id="SoftwareStack">Software Stack</h3>
+<p><strong>Warning:</strong> Missing prefLabel</p>
+<p><strong>IRI:</strong> <a
+href="#SoftwareStack">http://www.nsmntx.org/2020/08/swStacks#SoftwareStack</a></p>
+<p><strong>Subclass of:</strong></p>
+<ul>
+<li>is_a <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a></li>
+</ul>
+<h2 id="individuals">Individuals</h2>
+<h1 id="appendix">Appendix</h1>
+<h2 id="relation-taxonomies">Relation taxonomies</h2>
+<h2 id="class-taxonomies">Class taxonomies</h2>
+<h3 id="taxonomy-of-software-stack.">Taxonomy of Software Stack.</h3>
+<figure>
+<img src="././genfigs/Software%20Stack.svg" width="1024"
+alt="Taxonomy of Software Stack." />
+<figcaption aria-hidden="true">Taxonomy of Software Stack.</figcaption>
+</figure>

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.nsmntx.org/2020/08/swStacks"
+         xmlns="http://www.nsmntx.org/2020/08/swStacks#">
+
+<owl:Ontology rdf:about="http://www.nsmntx.org/2020/08/swStacks">
+  <rdfs:comment xml:lang="en">This ontology describes some of the most popular Software stacks.</rdfs:comment>
+</owl:Ontology>
+
+<owl:Class rdf:about="#GRANDstack">
+  <rdfs:subClassOf rdf:resource="#SoftwareStack"/>
+  <rdfs:label>GRAND Stack</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#SoftwareStack">
+  <rdfs:label>Software Stack</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q16878131">
+  <rdfs:subClassOf rdf:resource="#MEANstack"/>
+  <rdfs:label>Express.js</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#MEANstack">
+  <rdfs:subClassOf rdf:resource="#SoftwareStack"/>
+  <rdfs:label>MEAN Stack</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q2849803">
+  <rdfs:subClassOf rdf:resource="#MEANstack"/>
+  <rdfs:label>AngularJS</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q388">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>Linux</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#LAMPstack">
+  <rdfs:subClassOf rdf:resource="#SoftwareStack"/>
+  <rdfs:label>LAMP Stack</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q25104949">
+  <rdfs:subClassOf rdf:resource="#GRANDstack"/>
+  <rdfs:label>GraphQL</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q59">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>PHP</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q11354">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>Apache HTTP Server</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q1165204">
+  <rdfs:subClassOf rdf:resource="#MEANstack"/>
+  <rdfs:label>MongoDB</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q850">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>MySQL</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q787177">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>MariaDB</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q42478">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>Perl</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q756100">
+  <rdfs:subClassOf rdf:resource="#MEANstack"/>
+  <rdfs:label>Node.js</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q1628290">
+  <rdfs:subClassOf rdf:resource="#GRANDstack"/>
+  <rdfs:label>Neo4j</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Apollo">
+  <rdfs:subClassOf rdf:resource="#GRANDstack"/>
+  <rdfs:label>Apollo (Data Graph Platform)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q19399674">
+  <rdfs:subClassOf rdf:resource="#GRANDstack"/>
+  <rdfs:label>React</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.wikidata.org/entity/Q28865">
+  <rdfs:subClassOf rdf:resource="#LAMPstack"/>
+  <rdfs:label>Python</rdfs:label>
+</owl:Class>
+
+
+</rdf:RDF>
