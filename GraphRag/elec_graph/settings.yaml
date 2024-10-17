@@ -55,10 +55,12 @@ chunks:
 
 input:
   type: file # or blob
-  file_type: text # or csv
+  #file_type: text # or csv
+  file_type: csv
   base_dir: "input"
   file_encoding: utf-8
-  file_pattern: ".*\\.txt$"
+  #file_pattern: ".*\\.txt$"
+  file_pattern: ".*\\.csv$"
 
 cache:
   type: file # or blob
@@ -79,8 +81,9 @@ reporting:
   # container_name: <azure_blob_storage_container_name>
 
 entity_extraction:
-  #strategy: {"file":"emy.py"} #fully override the entity extraction strategy.
-  type: graph_intelligence_json # one of graph_intelligence, and nltk
+  #strategy: {"type" : graph_intelligence } #fully override the entity extraction strategy.
+  #type: graph_intelligence_json # one of graph_intelligence, and nltk
+  #type: "nltk"
   ## llm: override the global llm settings for this task
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
