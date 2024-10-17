@@ -1,5 +1,5 @@
 #encoding_model: cl100k_base
-skip_workflows: []
+skip_workflows: [''] #,'create_final_nodes']
 llm:
   api_key: ${GEMINI_API_KEY}
   type: openai_chat # or azure_openai_chat
@@ -80,12 +80,12 @@ reporting:
 
 entity_extraction:
   #strategy: {"file":"emy.py"} #fully override the entity extraction strategy.
-  ##   type: one of graph_intelligence, graph_intelligence_json and nltk
+  type: graph_intelligence_json # one of graph_intelligence, and nltk
   ## llm: override the global llm settings for this task
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
   prompt: "prompts/entity_extraction.txt"
-  entity_types: [organization,person,geo,event]
+  entity_types: [THINGS]
   max_gleanings: 1
 
 summarize_descriptions:
@@ -116,7 +116,7 @@ cluster_graph:
   max_cluster_size: 10
 
 embed_graph:
-  enabled: true # if true, will generate node2vec embeddings for nodes
+  enabled: false # if true, will generate node2vec embeddings for nodes
   # num_walks: 10
   # walk_length: 40
   # window_size: 2
@@ -124,12 +124,12 @@ embed_graph:
   # random_seed: 597832
 
 umap:
-  enabled: true # if true, will generate UMAP embeddings for nodes
+  enabled: false # if true, will generate UMAP embeddings for nodes
 
 snapshots:
-  graphml: true
+  graphml: false
   raw_entities: true
-  top_level_nodes: true
+  top_level_nodes: false
 
 local_search:
   # text_unit_prop: 0.5

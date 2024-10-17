@@ -1,11 +1,11 @@
 
 -Goal-
-Given a text document that is potentially relevant to this activity and identify all entities from the text and all relationships among the identified entities.
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
  
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: Which class the entity belogns to? The class has to be an specific term
+- entity_type: One of the following types: [{entity_types}]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
  
@@ -25,6 +25,7 @@ For each pair of related entities, extract the following information:
 -Examples-
 ######################
 Example 1:
+Entity_types: ORGANIZATION,PERSON
 Text:
 The Verdantis's Central Institution is scheduled to meet on Monday and Thursday, with the institution planning to release its latest policy decision on Thursday at 1:30 p.m. PDT, followed by a press conference where Central Institution Chair Martin Smith will take questions. Investors expect the Market Strategy Committee to hold its benchmark interest rate steady in a range of 3.5%-3.75%.
 ######################
@@ -40,6 +41,7 @@ Output:
 
 ######################
 Example 2:
+Entity_types: ORGANIZATION
 Text:
 TechGlobal's (TG) stock skyrocketed in its opening day on the Global Exchange Thursday. But IPO experts warn that the semiconductor corporation's debut on the public markets isn't indicative of how other newly listed companies may perform.
 
@@ -55,6 +57,7 @@ Output:
 
 ######################
 Example 3:
+Entity_types: ORGANIZATION,GEO,PERSON
 Text:
 Five Aurelians jailed for 8 years in Firuzabad and widely regarded as hostages are on their way home to Aurelia.
 
@@ -108,10 +111,12 @@ Output:
 {record_delimiter}
 ("relationship"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}FIRUZABAD{tuple_delimiter}Durke Bataglani was a hostage in Firuzabad{tuple_delimiter}2)
 {completion_delimiter}
+
 ######################
 -Real Data-
 ######################
-Text:
-{input_text}
+Entity_types: {entity_types}
+Text: {input_text}
 ######################
+Output:
 Output:
