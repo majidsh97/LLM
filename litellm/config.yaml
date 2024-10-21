@@ -1,0 +1,89 @@
+#https://docs.litellm.ai/docs/proxy_server
+#https://pytorch.org/serve/getting_started.html
+#https://docs.litellm.ai/docs/providers/custom_llm_server#
+#https://docs.litellm.ai/docs/proxy/configs
+
+model_list:
+  #sharghi.majid
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
+      drop_params: true
+      rpm: 10 
+
+  #majid.sharghi97
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyC0xAsze-B6US2Kj9eSZuTw3lFFe_knIOk
+      drop_params: true
+      rpm: 10
+
+  #majid.sharghi.business
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyDT1outDubmZK6np6NUzfoQyn28ONEdPmM
+      drop_params: true
+      rpm: 10
+
+  #theluxuy
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyCc5XpCCtgLC8lKrJPout4exMnigIDAXkQ
+      drop_params: true
+      rpm: 10
+
+  #majid.iran.1st
+  - model_name: gpt-4o
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: AIzaSyC1EuJLdAL3x3jMFQLOLu9fdkfmHfdF-AI
+      drop_params: true
+      rpm: 10
+#-------------------------------------------------------------------
+  - model_name: text
+    litellm_params:
+      model: gemini/text-embedding-004
+      api_key: AIzaSyDcsi9U5RgrnT3BG34Q0SMbbIvBc5kyFG0
+      drop_params: true
+  - model_name: text
+    litellm_params:
+      model: gemini/text-embedding-004
+      api_key: AIzaSyC0xAsze-B6US2Kj9eSZuTw3lFFe_knIOk
+      drop_params: true
+  - model_name: text
+    litellm_params:
+      model: gemini/text-embedding-004
+      api_key: AIzaSyDT1outDubmZK6np6NUzfoQyn28ONEdPmM
+      drop_params: true
+      
+
+#---------------------------------------------------------------------------
+  - model_name: hf
+    litellm_params:
+      model: huggingface/microsoft/codebert-base
+      api_key: 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
+      drop_params: true
+      rpm: 5
+
+litellm_settings:
+  num_retries: 2 # retry call 3 times on each model_name (e.g. zephyr-beta)
+  request_timeout: 60 # raise Timeout error if call takes longer than 10s. Sets litellm.request_timeout 
+  #fallbacks: [{"zephyr-beta": ["gpt-3.5-turbo"]}] # fallback to gpt-3.5-turbo if call fails num_retries 
+  #context_window_fallbacks: [{"zephyr-beta": ["gpt-3.5-turbo-16k"]}, {"gpt-3.5-turbo": ["gpt-3.5-turbo-16k"]}] # fallback to gpt-3.5-turbo-16k if context window error
+  allowed_fails: 2 # cooldown model if it fails > 1 call in a minute. 
+  cooldown_time: 60
+  max_parallel_requests: 5
+
+router_settings:
+  #routing_strategy: simple-shuffle
+  routing_strategy: usage-based-routing-v2
+  num_retries: 3
+  timeout: 60
+  allowed_fails: 1 # cooldown model if it fails > 1 call in a minute. 
+  cooldown_time: 60
+  max_parallel_requests: 5
+
