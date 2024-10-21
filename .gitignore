@@ -1,6 +1,5 @@
 .11.0.0/
-my_awesome_qa_model/*
-my_awesome_qa_model/checkpoint-500
+my_awesome_qa_model/
 __pycache__/
 *.pkl
 *.csv
@@ -11,6 +10,5 @@ __pycache__/
 *.bin
 *.graphml
 *.parquet
-*.csv
 *.env
 *.yaml
