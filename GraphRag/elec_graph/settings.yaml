@@ -12,7 +12,7 @@ llm:
   # organization: <organization_id>
   # deployment_name: <azure_model_deployment_name>
   tokens_per_minute: 350_000 # set a leaky bucket throttle
-  requests_per_minute: 10 # set a leaky bucket throttle
+  requests_per_minute: 50 # set a leaky bucket throttle
   # max_retries: 10
   # max_retry_wait: 10.0
   # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
@@ -23,16 +23,16 @@ llm:
 
 parallelization:
   stagger: 0.3
-  num_threads: 1 # the number of threads to use for parallel processing
+  num_threads: 5 # the number of threads to use for parallel processing
 
-async_mode: threaded # or asyncio
+async_mode:   asyncio #threaded #
 
 embeddings:
   ## parallelization: override the global parallelization settings for embeddings
-  async_mode: threaded # or asyncio
+  async_mode:  asyncio #threaded #
   # target: required # or all
-  # batch_size: 16 # the number of documents to send in a single request
-  # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
+  batch_size: 16 # the number of documents to send in a single request
+  batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
   llm:
     api_key: ${GEMINI_API_KEY}
     type: openai_embedding # or azure_openai_embedding
@@ -89,7 +89,7 @@ entity_extraction:
   ## async_mode: override the global async_mode settings for this task
   prompt: "prompts/entity_extraction.txt"
   entity_types: [THINGS]
-  max_gleanings: 1
+  max_gleanings: 2
 
 summarize_descriptions:
   ## llm: override the global llm settings for this task
