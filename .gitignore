@@ -14,3 +14,4 @@ __pycache__/
 *.csv
 *.env
 *.yaml
+/home/cip/ce/ix05ogym/Majid/LLM/litellm/config.yaml
