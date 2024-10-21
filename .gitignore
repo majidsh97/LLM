@@ -12,5 +12,3 @@ __pycache__/
 *.graphml
 *.parquet
 *.csv
-*.env
-*.yaml
