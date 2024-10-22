@@ -1,0 +1,64 @@
+
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        color: white;
+        table-layout: fixed;  /* Ensures the table layout remains consistent */
+    }
+    th, td {
+        text-align: center;
+        padding: 8px;
+        border: 1px solid white;
+    }
+    th {
+        position: sticky;
+        top: 0;
+        background-color: #222222;  /* Dark background for header */
+        z-index: 10;  /* Ensures the header stays above other content */
+    }
+    tr:nth-child(even) {
+        background-color: #333333;  /* Dark gray for even rows */
+    }
+    tr:nth-child(odd) {
+        background-color: #555555;  /* Lighter gray for odd rows */
+    }
+    body {
+        background-color: black;  /* Black background for the page */
+    }
+    /* Scrollable table body */
+    tbody {
+        display: block;
+        height: 300px;  /* Adjust height as needed */
+        overflow-y: scroll;
+    }
+    table thead, table tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;  /* Fixes layout to allow proper scrolling */
+    }
+    </style>
+    <table border="1" class="dataframe zebra">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Question</th>
+      <th>RAG</th>
+      <th>Graph RAG (Local)</th>
+      <th>Graph RAG (Global)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What are letter codes in the context of BS 4584?</td>
+      <td>BS 4584 is a British standard that defines properties of common clad printed circuit board laminates, commonly known as PCB laminates.  The letter codes in Table 1.2 are not provided in the data provided, therefore it is not possible to answer your question. \n</td>
+      <td>BS 4584 is a standard for printed circuit board laminates. It defines tests and letter codes for various types of laminates, including EP-GCA-CU-16, EP-GC-CU-2, EP-GC-CU-3, PETP-F-CU-9, PF-CP-CU-5, PF-CP-CU-6, PF-CP-CU-8, PF-CP-CU-14, and PI-F-CU-10 [Data: Entities (314, 315, 316, 317, 318, +more); Relationships (455, 456, 457, 458, 459, +more)]. Letter codes are symbols used to represent specific properties of a laminate [Data: Entities (350)].  \n\nBS 4584 defines letter codes for laminates, which are used to identify their specific properties and characteristics [Data: Relationships (466)]. They are essential for communication and understanding between manufacturers, suppliers, and users of these laminates. For example, 'EP' refers to Epoxide resin, 'GC' to Woven glass fabric, and 'Cu' to Copper conductor [Data: Sources (6)]. These codes are defined in Table 1.2, a document that lists the codes along with their corresponding descriptions [Data: Entities (230)]. \n</td>
+      <td>Letter codes are used to represent properties of laminate materials [Data: Reports (70, 485)]. They are defined by BS 4584, a standard for printed circuit board laminates [Data: Reports (69, 70)].  A table listing the codes and corresponding descriptions is included in the BS 4584 standard [Data: Reports (70)]. This system allows for efficient identification and comparison of different materials based on their properties [Data: Reports (485)], which facilitates informed decision-making in various applications [Data: Reports (485)]. \n</td>
+    </tr>
+    <tr>
+      <td>How does soldering potentially contribute to peaceful pursuits?</td>
+      <td>The text provided does not discuss soldering's contribution to peaceful pursuits. It focuses on the technical aspects of the soldering process in electronics manufacturing. \n\nThe text discusses the history of soldering, its various methods, and the challenges of using lead-free solders. There is no mention of its role in peaceful activities, such as art or construction. \n\nWhile soldering is a common technique used in creating electronic devices, which in turn are used in numerous peaceful applications, the text itself does not directly address this topic. \n</td>
+      <td>Soldering is a process that joins metal parts together, and it is used in many industries, including the electronics industry. [Data: Entities (13); Relationships (58, 71, 175, 74, 86, +more)] This process has been used for thousands of years to forge</td>
+      <td>I am sorry but I am unable to answer this question given the provided data.</td>
+    </tr>
+  </tbody>
+</table>

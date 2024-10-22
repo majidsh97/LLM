@@ -151,3 +151,144 @@ def answer_to_quesion(collection , question,prompt=RAG_SYSTEM_PROMPT,isjson=Fals
     llm_result = completion(question,rag_system_prompt,isjson)
     return llm_result
 
+
+
+#%%
+
+import pandas as pd
+from fpdf import FPDF
+
+# Load the CSV file into a DataFrame
+
+# Create a PDF class
+class PDF(FPDF):
+    def header(self):
+        self.set_font('Arial', 'B', 12)
+        self.cell(0, 10, 'CSV to PDF Table', 0, 1, 'C')
+
+    def footer(self):
+        self.set_y(-15)
+        self.set_font('Arial', 'I', 8)
+        self.cell(0, 10, f'Page {self.page_no()}', 0, 0, 'C')
+
+    def create_table(self, df):
+        # Table header
+        self.set_font('Arial', 'B', 12)
+        for col in df.columns:
+            self.cell(40, 10, col, 1, 0, 'C')
+        self.ln()
+
+        # Table body
+        self.set_font('Arial', '', 12)
+        for i in range(len(df)):
+            for col in df.columns:
+                self.cell(40, 10, str(df[col].iloc[i]), 1, 0, 'C')
+            self.ln()
+
+# Create a PDF instance
+def df_to_pdf(df,path):
+    pdf = PDF()
+    pdf.add_page()
+
+    # Add table to PDF
+    pdf.create_table(df)
+
+    # Save PDF to file
+    pdf.output(path)
+    print("PDF created successfully!")
+
+
+def df_to_html(df,path):
+    import pandas as pd
+    # Define custom styles
+    style= '''
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+    '''
+
+    style_2= '''
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid white;
+        }
+        tr:nth-child(even) {
+            background-color: #333333;  /* Dark gray for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #555555;  /* Lighter gray for odd rows */
+        }
+        body {
+            background-color: black;  /* Black background for the page */
+        }
+    </style>'''
+
+    styles_3 = '''
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        color: white;
+        table-layout: fixed;  /* Ensures the table layout remains consistent */
+    }
+    th, td {
+        text-align: center;
+        padding: 8px;
+        border: 1px solid white;
+    }
+    th {
+        position: sticky;
+        top: 0;
+        background-color: #222222;  /* Dark background for header */
+        z-index: 10;  /* Ensures the header stays above other content */
+    }
+    tr:nth-child(even) {
+        background-color: #333333;  /* Dark gray for even rows */
+    }
+    tr:nth-child(odd) {
+        background-color: #555555;  /* Lighter gray for odd rows */
+    }
+    body {
+        background-color: black;  /* Black background for the page */
+    }
+    /* Scrollable table body */
+    tbody {
+        display: block;
+        height: 300px;  /* Adjust height as needed */
+        overflow-y: scroll;
+    }
+    table thead, table tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;  /* Fixes layout to allow proper scrolling */
+    }
+    </style>
+    '''
+
+    # Convert DataFrame to HTML with added style
+    html = styles_3 + df.to_html(index=False, classes="zebra", justify='center')
+
+    # Write the HTML to a file (optional)
+    with open(path, "w") as file:
+        file.write(html)
