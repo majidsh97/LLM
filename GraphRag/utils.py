@@ -38,7 +38,7 @@ electronic_collection = client.get_or_create_collection('electronic',
 question_collection = client.get_or_create_collection('questions')
 
 
-def completion(msg,sys_msg="",JSON=True):
+def completion(msg,sys_msg="",JSON=True,temperature=0.0):
 
     messages = [{"role":"system","content":sys_msg},
                 {"role": "user", "content":msg }]
@@ -64,8 +64,8 @@ def completion(msg,sys_msg="",JSON=True):
                 "threshold": "BLOCK_NONE",
             },
         ], 
-        response_format= {"type": "json_object"} if JSON else None
-    
+        response_format= {"type": "json_object"} if JSON else None,
+        temperature=temperature,
     )
      
     j= r.choices[0].message.content
@@ -201,94 +201,67 @@ def df_to_pdf(df,path):
 def df_to_html(df,path):
     import pandas as pd
     # Define custom styles
-    style= '''
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            text-align: center;
-            padding: 8px;
-            border: 1px solid black;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:nth-child(odd) {
-            background-color: #ffffff;
-        }
-    </style>
-    '''
 
-    style_2= '''
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            color: white;
-        }
-        th, td {
-            text-align: center;
-            padding: 8px;
-            border: 1px solid white;
-        }
-        tr:nth-child(even) {
-            background-color: #333333;  /* Dark gray for even rows */
-        }
-        tr:nth-child(odd) {
-            background-color: #555555;  /* Lighter gray for odd rows */
-        }
-        body {
-            background-color: black;  /* Black background for the page */
-        }
-    </style>'''
 
-    styles_3 = '''
+    # Replace \n with <br> in the DataFrame
+    df = df.replace('\n', '<br>', regex=True)
+
+    # Define custom styles for zebra stripes, a black background, and a fixed header
+    styles = '''
     <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-color: black;
+    }
     table {
         width: 100%;
         border-collapse: collapse;
         color: white;
-        table-layout: fixed;  /* Ensures the table layout remains consistent */
+        table-layout: fixed;
+        height: 100vh;
     }
     th, td {
         text-align: center;
         padding: 8px;
         border: 1px solid white;
+        white-space: pre-wrap;  /* Ensures text wraps and <br> is recognized */
     }
     th {
         position: sticky;
         top: 0;
-        background-color: #222222;  /* Dark background for header */
-        z-index: 10;  /* Ensures the header stays above other content */
+        background-color: #222222;
+        z-index: 10;
     }
     tr:nth-child(even) {
-        background-color: #333333;  /* Dark gray for even rows */
+        background-color: #333333;
     }
     tr:nth-child(odd) {
-        background-color: #555555;  /* Lighter gray for odd rows */
+        background-color: #555555;
     }
     body {
-        background-color: black;  /* Black background for the page */
+        background-color: black;
     }
-    /* Scrollable table body */
     tbody {
         display: block;
-        height: 300px;  /* Adjust height as needed */
-        overflow-y: scroll;
+        overflow-y: auto;
+        height: calc(100vh - 50px);
     }
     table thead, table tbody tr {
         display: table;
         width: 100%;
-        table-layout: fixed;  /* Fixes layout to allow proper scrolling */
+        table-layout: fixed;
     }
     </style>
     '''
 
     # Convert DataFrame to HTML with added style
-    html = styles_3 + df.to_html(index=False, classes="zebra", justify='center')
+    # Using escape=False allows rendering the HTML tags
+    html = styles + df.to_html(index=False, classes="zebra", justify='center', escape=False)
 
     # Write the HTML to a file (optional)
     with open(path, "w") as file:
         file.write(html)
+
+    # Print the HTML
+
