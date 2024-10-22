@@ -1,0 +1,70 @@
+
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-color: black;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        color: white;
+        table-layout: fixed;
+        height: 100vh;
+    }
+    th, td {
+        text-align: center;
+        padding: 8px;
+        border: 1px solid white;
+        white-space: pre-wrap;  /* Ensures text wraps and <br> is recognized */
+    }
+    th {
+        position: sticky;
+        top: 0;
+        background-color: #222222;
+        z-index: 10;
+    }
+    tr:nth-child(even) {
+        background-color: #333333;
+    }
+    tr:nth-child(odd) {
+        background-color: #555555;
+    }
+    body {
+        background-color: black;
+    }
+    tbody {
+        display: block;
+        overflow-y: auto;
+        height: calc(100vh - 50px);
+    }
+    table thead, table tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    </style>
+    <table border="1" class="dataframe zebra">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Question</th>
+      <th>RAG</th>
+      <th>Graph RAG (Local)</th>
+      <th>Graph RAG (Global)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What are letter codes in the context of BS 4584?</td>
+      <td>The provided data does not contain information about letter codes in the context of BS 4584. <br></td>
+      <td></td>
+      <td>Letter codes are used in the context of BS 4584 to represent specific properties and characteristics of laminates [Data: Reports (466)]. This standardized system of letter codes facilitates clear communication and understanding between manufacturers, suppliers, and users of laminates [Data: Reports (466)]. They allow for efficient identification and comparison of different materials based on their properties, ultimately aiding in informed decision-making for various applications [Data: Reports (53)]. <br></td>
+    </tr>
+    <tr>
+      <td>How does soldering potentially contribute to peaceful pursuits?</td>
+      <td>The provided text focuses on the technical aspects of soldering in electronics manufacturing and does not mention any potential contributions to peaceful pursuits. <br><br>The text discusses the history of soldering, its importance in electronics assembly, and the challenges of achieving high-quality soldered joints. It also highlights the need for clean and precise soldering techniques due to the miniaturization of components and printed circuit boards. <br><br>While soldering is a crucial process in the production of electronics, which are used in various peaceful applications, the text itself does not explicitly address the connection between soldering and peaceful pursuits. <br></td>
+      <td>Soldering is a process that joins metal parts together by melting a filler metal, typically an alloy of tin and lead. This process is commonly used in electronics assembly to connect components to printed circuit boards (PCBs). [Data: Entities (13); Relationships (58, 71, 175, 74, 86, +more)]<br><br>The text provided discusses the role of soldering in the electronics industry and how its advancement has enabled the development of more reliable and efficient electronic assemblies [Data: Entities (191)].  It also mentions that soldering is used in many industries, including electronics, and is a key process in the manufacture of electronic assemblies and products [Data: Entities (653, 646); Relationships (160, 161, 114)].<br><br>However, the text does not provide any information about how soldering contributes to peaceful pursuits. It would be difficult to extrapolate that information from the provided data. <br></td>
+      <td>I am sorry but I am unable to answer this question given the provided data.</td>
+    </tr>
+  </tbody>
+</table>

@@ -66,6 +66,7 @@ def completion(msg,sys_msg="",JSON=True,temperature=0.0):
         ], 
         response_format= {"type": "json_object"} if JSON else None,
         temperature=temperature,
+        
     )
      
     j= r.choices[0].message.content
