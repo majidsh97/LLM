@@ -138,16 +138,16 @@ Do NOT include information where the supporting evidence for it is NOT provided.
 Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
 """
 RESPONSE_TYPE = "multiple paragraphs"
-def answer_to_quesion(collection , question):
+def answer_to_quesion(collection , question,prompt=RAG_SYSTEM_PROMPT,isjson=False):
     rag_results = collection.query(query_texts=question,n_results=5)
     context_text=""
     for _id,_text in zip(rag_results['ids'][0],rag_results['documents'][0]):
         context_text += f"[Data: Source unit_text {_id}]\n{_text}\n"
     
-    rag_system_prompt = RAG_SYSTEM_PROMPT.format(
+    rag_system_prompt = prompt.format(
         
                 context_data=context_text, response_type=RESPONSE_TYPE
             )
-    llm_result = completion(question,rag_system_prompt,False)
+    llm_result = completion(question,rag_system_prompt,isjson)
     return llm_result
 
