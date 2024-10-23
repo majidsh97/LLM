@@ -130,13 +130,14 @@ For example:
 
 where 15, 16, 1, 5, 7, 23, 2, 7, 34, 46, and 64 represent the id (not the index) of the relevant data record.
 
-Do NOT include information where the supporting evidence for it is NOT provided.
+Do NOT include information where the supporting evidence for it is NOT provided. If you can not answer based on the provided text just say so and do not continiue.
 
 ---Target response length and format---
 
 {response_type}
 
 Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
+
 """
 RESPONSE_TYPE = "multiple paragraphs"
 def answer_to_quesion(collection , question,prompt=RAG_SYSTEM_PROMPT,isjson=False):
