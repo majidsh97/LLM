@@ -246,7 +246,7 @@ def df_to_html(df,path):
     tbody {
         display: block;
         overflow-y: auto;
-        height: calc(100vh - 50px);
+        height: 100%;
     }
     table thead, table tbody tr {
         display: table;
