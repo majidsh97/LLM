@@ -141,7 +141,7 @@ Add sections and commentary to the response as appropriate for the length and fo
 """
 RESPONSE_TYPE = "multiple paragraphs"
 def answer_to_quesion(collection , question,prompt=RAG_SYSTEM_PROMPT,isjson=False):
-    rag_results = collection.query(query_texts=question,n_results=5)
+    rag_results = collection.query(query_texts=question,n_results=10)
     context_text=""
     for _id,_text in zip(rag_results['ids'][0],rag_results['documents'][0]):
         context_text += f"[Data: Source unit_text {_id}]\n{_text}\n"
