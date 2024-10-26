@@ -137,7 +137,6 @@ Do NOT include information where the supporting evidence for it is NOT provided.
 {response_type}
 
 Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
-
 """
 RESPONSE_TYPE = "multiple paragraphs"
 def answer_to_quesion(collection , question,prompt=RAG_SYSTEM_PROMPT,isjson=False):
