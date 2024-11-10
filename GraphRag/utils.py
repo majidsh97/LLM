@@ -17,8 +17,6 @@ litellm.set_verbose = False
 def split_list(lst, chunk_size):
     return [lst[i:i + chunk_size] for i in range(0, len(lst), chunk_size)]
 
-
-
 class Embed(EmbeddingFunction):
     def __call__(self, input: Documents) -> Embeddings:
         import numpy as np

@@ -1,43 +1,43 @@
 {
-    "total_runtime": 34.03550839424133,
+    "total_runtime": 35.84695649147034,
     "num_documents": 1,
     "input_load_time": 0,
     "workflows": {
         "create_base_text_units": {
-            "overall": 2.278306722640991,
-            "0_create_base_text_units": 2.276923418045044
+            "overall": 0.4419736862182617,
+            "0_create_base_text_units": 0.4406321048736572
         },
         "create_base_entity_graph": {
-            "overall": 18.895998001098633,
-            "0_create_base_entity_graph": 18.89464282989502
+            "overall": 25.49319076538086,
+            "0_create_base_entity_graph": 25.49179244041443
         },
         "create_final_entities": {
-            "overall": 1.3017492294311523,
-            "0_create_final_entities": 1.3001930713653564
+            "overall": 1.0792014598846436,
+            "0_create_final_entities": 1.077631950378418
         },
         "create_final_nodes": {
-            "overall": 2.9043850898742676,
-            "0_create_final_nodes": 2.9026505947113037
+            "overall": 2.415085554122925,
+            "0_create_final_nodes": 2.4132864475250244
         },
         "create_final_communities": {
-            "overall": 0.013598442077636719,
-            "0_create_final_communities": 0.011594772338867188
+            "overall": 0.015011787414550781,
+            "0_create_final_communities": 0.012912750244140625
         },
         "create_final_relationships": {
-            "overall": 0.009181022644042969,
-            "0_create_final_relationships": 0.006805896759033203
+            "overall": 0.008566617965698242,
+            "0_create_final_relationships": 0.006226301193237305
         },
         "create_final_text_units": {
-            "overall": 0.034180641174316406,
-            "0_create_final_text_units": 0.03150296211242676
+            "overall": 0.012395858764648438,
+            "0_create_final_text_units": 0.009703636169433594
         },
         "create_final_community_reports": {
-            "overall": 7.226290702819824,
-            "0_create_final_community_reports": 7.223480701446533
+            "overall": 5.020969390869141,
+            "0_create_final_community_reports": 5.018141746520996
         },
         "create_final_documents": {
-            "overall": 0.009853363037109375,
-            "0_create_final_documents": 0.006842136383056641
+            "overall": 0.009997844696044922,
+            "0_create_final_documents": 0.006935834884643555
         }
     }
 }
