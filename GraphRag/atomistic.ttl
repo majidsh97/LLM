@@ -111,13 +111,13 @@ physical situation.  The most general form is the
 time-dependent Schrödinger equation."""@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom :df750ce7-fda1-5e9b-ba32-db96ec170577 ],
+            owl:someValuesFrom ns1:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
         [ a owl:Restriction ;
             owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
             owl:someValuesFrom :42244404-98d1-582a-8fc0-3cdd2a9b3df6 ],
         [ a owl:Restriction ;
             owl:onProperty ns1:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom ns1:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+            owl:someValuesFrom :df750ce7-fda1-5e9b-ba32-db96ec170577 ],
         ns1:EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3 ;
     skos:altLabel "SchrödingerEquation"@en ;
     skos:prefLabel "SchrodingerEquation"@en .
