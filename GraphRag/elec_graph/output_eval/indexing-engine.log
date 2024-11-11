@@ -42313,3 +42313,255 @@ LiteLLM completion() model= gpt-4o; provider = openai
 00:26:58,427 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
 00:26:58,750 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
 00:26:58,751 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 4/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:06,285 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:06,286 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 5/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:06,475 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:06,475 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 5/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:06,698 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:06,699 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 5/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:06,906 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:06,907 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 5/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:07,174 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:07,175 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 5/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:16,310 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:16,311 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 6/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:16,499 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:16,500 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 6/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:16,723 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:16,724 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 6/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:16,923 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:16,923 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 6/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:17,193 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:17,193 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 6/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:26,347 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:26,348 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 7/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:26,522 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:26,523 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 7/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:26,745 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:26,746 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 7/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:26,947 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:26,948 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 7/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:27,215 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:27,216 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 7/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:36,385 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:36,386 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 8/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:36,545 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:36,546 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 8/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:36,763 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:36,763 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 8/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:36,969 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:36,970 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 8/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:37,240 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:37,241 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 8/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:46,428 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:27:46,429 graphrag.llm.base.rate_limiting_llm WARNING summarize failed to invoke LLM 9/10 attempts. Cause: rate limit exceeded, will retry. Recommended sleep for 0 seconds. Follow recommendation? True
+00:27:47,43 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:47,44 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 8 retries took 0.497189061017707. input_tokens=181, output_tokens=30
+00:27:47,526 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:47,528 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 8 retries took 0.5561197979841381. input_tokens=150, output_tokens=20
+00:27:47,613 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:47,614 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.5677401530556381. input_tokens=165, output_tokens=37
+00:27:47,715 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:47,716 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 8 retries took 0.9519125039223582. input_tokens=154, output_tokens=14
+00:27:48,125 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:48,127 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.5940306129632518. input_tokens=162, output_tokens=39
+00:27:48,250 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:48,252 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6361852220725268. input_tokens=167, output_tokens=53
+00:27:48,330 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:48,332 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 8 retries took 1.090392251033336. input_tokens=167, output_tokens=44
+00:27:57,416 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:27:57,418 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 9 retries took 0.9845145139843225. input_tokens=169, output_tokens=22
+00:27:57,459 root INFO Starting preprocessing of transition probabilities on graph with 73 nodes and 208 edges
+00:27:57,460 root INFO Starting at time 1731367677.4600132
+00:27:57,460 root INFO Beginning preprocessing of transition probabilities for 73 vertices
+00:27:57,460 root INFO Completed 1 / 73 vertices
+00:27:57,460 root INFO Completed 8 / 73 vertices
+00:27:57,460 root INFO Completed 15 / 73 vertices
+00:27:57,460 root INFO Completed 22 / 73 vertices
+00:27:57,460 root INFO Completed 29 / 73 vertices
+00:27:57,460 root INFO Completed 36 / 73 vertices
+00:27:57,460 root INFO Completed 43 / 73 vertices
+00:27:57,460 root INFO Completed 50 / 73 vertices
+00:27:57,460 root INFO Completed 57 / 73 vertices
+00:27:57,460 root INFO Completed 64 / 73 vertices
+00:27:57,460 root INFO Completed 71 / 73 vertices
+00:27:57,460 root INFO Completed preprocessing of transition probabilities for vertices
+00:27:57,460 root INFO Beginning preprocessing of transition probabilities for 208 edges
+00:27:57,460 root INFO Completed 1 / 208 edges
+00:27:57,461 root INFO Completed 21 / 208 edges
+00:27:57,461 root INFO Completed 41 / 208 edges
+00:27:57,462 root INFO Completed 61 / 208 edges
+00:27:57,462 root INFO Completed 81 / 208 edges
+00:27:57,463 root INFO Completed 101 / 208 edges
+00:27:57,464 root INFO Completed 121 / 208 edges
+00:27:57,465 root INFO Completed 141 / 208 edges
+00:27:57,465 root INFO Completed 161 / 208 edges
+00:27:57,466 root INFO Completed 181 / 208 edges
+00:27:57,466 root INFO Completed 201 / 208 edges
+00:27:57,466 root INFO Completed preprocessing of transition probabilities for edges
+00:27:57,466 root INFO Simulating walks on graph at time 1731367677.4665623
+00:27:57,466 root INFO Walk iteration: 1/10
+00:27:57,469 root INFO Walk iteration: 2/10
+00:27:57,471 root INFO Walk iteration: 3/10
+00:27:57,473 root INFO Walk iteration: 4/10
+00:27:57,475 root INFO Walk iteration: 5/10
+00:27:57,477 root INFO Walk iteration: 6/10
+00:27:57,479 root INFO Walk iteration: 7/10
+00:27:57,481 root INFO Walk iteration: 8/10
+00:27:57,484 root INFO Walk iteration: 9/10
+00:27:57,486 root INFO Walk iteration: 10/10
+00:27:57,488 root INFO Learning embeddings at time 1731367677.488406
+00:27:57,488 gensim.models.word2vec INFO collecting all words and their counts
+00:27:57,488 gensim.models.word2vec INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+00:27:57,489 gensim.models.word2vec INFO collected 73 word types from a corpus of 14960 raw words and 730 sentences
+00:27:57,489 gensim.models.word2vec INFO Creating a fresh vocabulary
+00:27:57,489 gensim.utils INFO Word2Vec lifecycle event {'msg': 'effective_min_count=0 retains 73 unique words (100.00% of original 73, drops 0)', 'datetime': '2024-11-12T00:27:57.489631', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'prepare_vocab'}
+00:27:57,489 gensim.utils INFO Word2Vec lifecycle event {'msg': 'effective_min_count=0 leaves 14960 word corpus (100.00% of original 14960, drops 0)', 'datetime': '2024-11-12T00:27:57.489665', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'prepare_vocab'}
+00:27:57,489 gensim.models.word2vec INFO deleting the raw counts dictionary of 73 items
+00:27:57,489 gensim.models.word2vec INFO sample=0.001 downsamples 57 most-common words
+00:27:57,489 gensim.utils INFO Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 4480.134678828313 word corpus (29.9%% of prior 14960)', 'datetime': '2024-11-12T00:27:57.489840', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'prepare_vocab'}
+00:27:57,490 gensim.models.word2vec INFO estimated required memory for 73 words and 1536 dimensions: 933524 bytes
+00:27:57,490 gensim.models.word2vec INFO resetting layer weights
+00:27:57,490 gensim.utils INFO Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2024-11-12T00:27:57.490457', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'build_vocab'}
+00:27:57,490 gensim.utils INFO Word2Vec lifecycle event {'msg': 'training model with 8 workers on 73 vocabulary and 1536 features, using sg=1 hs=0 sample=0.001 negative=5 window=2 shrink_windows=True', 'datetime': '2024-11-12T00:27:57.490501', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'train'}
+00:27:57,506 gensim.models.word2vec INFO EPOCH 0: training on 14960 raw words (4473 effective words) took 0.0s, 329744 effective words/s
+00:27:57,522 gensim.models.word2vec INFO EPOCH 1: training on 14960 raw words (4463 effective words) took 0.0s, 308164 effective words/s
+00:27:57,543 gensim.models.word2vec INFO EPOCH 2: training on 14960 raw words (4431 effective words) took 0.0s, 217771 effective words/s
+00:27:57,543 gensim.utils INFO Word2Vec lifecycle event {'msg': 'training on 44880 raw words (13367 effective words) took 0.1s, 251853 effective words/s', 'datetime': '2024-11-12T00:27:57.543597', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'train'}
+00:27:57,543 gensim.utils INFO Word2Vec lifecycle event {'params': 'Word2Vec<vocab=73, vector_size=1536, alpha=0.025>', 'datetime': '2024-11-12T00:27:57.543636', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'created'}
+00:27:57,543 root INFO Completed. Ending time is 1731367677.5436797 Elapsed time is -0.08366656303405762
+00:27:57,554 root INFO Starting preprocessing of transition probabilities on graph with 73 nodes and 208 edges
+00:27:57,554 root INFO Starting at time 1731367677.554637
+00:27:57,554 root INFO Beginning preprocessing of transition probabilities for 73 vertices
+00:27:57,554 root INFO Completed 1 / 73 vertices
+00:27:57,554 root INFO Completed 8 / 73 vertices
+00:27:57,554 root INFO Completed 15 / 73 vertices
+00:27:57,554 root INFO Completed 22 / 73 vertices
+00:27:57,554 root INFO Completed 29 / 73 vertices
+00:27:57,555 root INFO Completed 36 / 73 vertices
+00:27:57,555 root INFO Completed 43 / 73 vertices
+00:27:57,555 root INFO Completed 50 / 73 vertices
+00:27:57,555 root INFO Completed 57 / 73 vertices
+00:27:57,555 root INFO Completed 64 / 73 vertices
+00:27:57,555 root INFO Completed 71 / 73 vertices
+00:27:57,555 root INFO Completed preprocessing of transition probabilities for vertices
+00:27:57,555 root INFO Beginning preprocessing of transition probabilities for 208 edges
+00:27:57,555 root INFO Completed 1 / 208 edges
+00:27:57,555 root INFO Completed 21 / 208 edges
+00:27:57,556 root INFO Completed 41 / 208 edges
+00:27:57,556 root INFO Completed 61 / 208 edges
+00:27:57,557 root INFO Completed 81 / 208 edges
+00:27:57,558 root INFO Completed 101 / 208 edges
+00:27:57,559 root INFO Completed 121 / 208 edges
+00:27:57,559 root INFO Completed 141 / 208 edges
+00:27:57,560 root INFO Completed 161 / 208 edges
+00:27:57,560 root INFO Completed 181 / 208 edges
+00:27:57,561 root INFO Completed 201 / 208 edges
+00:27:57,561 root INFO Completed preprocessing of transition probabilities for edges
+00:27:57,561 root INFO Simulating walks on graph at time 1731367677.5612137
+00:27:57,561 root INFO Walk iteration: 1/10
+00:27:57,563 root INFO Walk iteration: 2/10
+00:27:57,565 root INFO Walk iteration: 3/10
+00:27:57,567 root INFO Walk iteration: 4/10
+00:27:57,570 root INFO Walk iteration: 5/10
+00:27:57,572 root INFO Walk iteration: 6/10
+00:27:57,574 root INFO Walk iteration: 7/10
+00:27:57,576 root INFO Walk iteration: 8/10
+00:27:57,578 root INFO Walk iteration: 9/10
+00:27:57,580 root INFO Walk iteration: 10/10
+00:27:57,583 root INFO Learning embeddings at time 1731367677.5830112
+00:27:57,583 gensim.models.word2vec INFO collecting all words and their counts
+00:27:57,583 gensim.models.word2vec INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+00:27:57,584 gensim.models.word2vec INFO collected 73 word types from a corpus of 14960 raw words and 730 sentences
+00:27:57,584 gensim.models.word2vec INFO Creating a fresh vocabulary
+00:27:57,584 gensim.utils INFO Word2Vec lifecycle event {'msg': 'effective_min_count=0 retains 73 unique words (100.00% of original 73, drops 0)', 'datetime': '2024-11-12T00:27:57.584134', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'prepare_vocab'}
+00:27:57,584 gensim.utils INFO Word2Vec lifecycle event {'msg': 'effective_min_count=0 leaves 14960 word corpus (100.00% of original 14960, drops 0)', 'datetime': '2024-11-12T00:27:57.584162', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'prepare_vocab'}
+00:27:57,584 gensim.models.word2vec INFO deleting the raw counts dictionary of 73 items
+00:27:57,584 gensim.models.word2vec INFO sample=0.001 downsamples 57 most-common words
+00:27:57,584 gensim.utils INFO Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 4480.134678828313 word corpus (29.9%% of prior 14960)', 'datetime': '2024-11-12T00:27:57.584333', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'prepare_vocab'}
+00:27:57,584 gensim.models.word2vec INFO estimated required memory for 73 words and 1536 dimensions: 933524 bytes
+00:27:57,584 gensim.models.word2vec INFO resetting layer weights
+00:27:57,584 gensim.utils INFO Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2024-11-12T00:27:57.584877', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'build_vocab'}
+00:27:57,584 gensim.utils INFO Word2Vec lifecycle event {'msg': 'training model with 8 workers on 73 vocabulary and 1536 features, using sg=1 hs=0 sample=0.001 negative=5 window=2 shrink_windows=True', 'datetime': '2024-11-12T00:27:57.584916', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'train'}
+00:27:57,600 gensim.models.word2vec INFO EPOCH 0: training on 14960 raw words (4473 effective words) took 0.0s, 318823 effective words/s
+00:27:57,616 gensim.models.word2vec INFO EPOCH 1: training on 14960 raw words (4463 effective words) took 0.0s, 309303 effective words/s
+00:27:57,634 gensim.models.word2vec INFO EPOCH 2: training on 14960 raw words (4431 effective words) took 0.0s, 253428 effective words/s
+00:27:57,634 gensim.utils INFO Word2Vec lifecycle event {'msg': 'training on 44880 raw words (13367 effective words) took 0.0s, 267394 effective words/s', 'datetime': '2024-11-12T00:27:57.634927', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'train'}
+00:27:57,634 gensim.utils INFO Word2Vec lifecycle event {'params': 'Word2Vec<vocab=73, vector_size=1536, alpha=0.025>', 'datetime': '2024-11-12T00:27:57.634960', 'gensim': '4.3.3', 'python': '3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]', 'platform': 'Linux-6.1.115-1-cip-amd64-x86_64-with-glibc2.36', 'event': 'created'}
+00:27:57,635 root INFO Completed. Ending time is 1731367677.634998 Elapsed time is -0.08036112785339355
+00:27:57,712 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_entity_graph.parquet
+00:27:57,937 graphrag.index.run.workflow INFO dependencies for create_final_entities: ['create_base_entity_graph']
+00:27:57,937 graphrag.utils.storage INFO read table from storage: create_base_entity_graph.parquet
+00:27:57,949 datashaper.workflow.workflow INFO executing verb create_final_entities
+00:27:57,959 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:8080
+00:27:57,997 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for text: TPM=350000, RPM=10
+00:27:57,997 graphrag.index.llm.load_llm INFO create concurrency limiter for text: 25
+00:27:58,0 graphrag.index.operations.embed_text.strategies.openai INFO embedding 92 inputs via 87 snippets using 6 batches. max_batch_size=16, max_tokens=8191
+00:27:59,446 httpx INFO HTTP Request: POST http://localhost:8080/embeddings "HTTP/1.1 200 OK"
+00:27:59,470 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 1.469171917065978. input_tokens=451, output_tokens=0
+00:27:59,573 httpx INFO HTTP Request: POST http://localhost:8080/embeddings "HTTP/1.1 200 OK"
+00:27:59,596 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 1.5947954580187798. input_tokens=485, output_tokens=0
+00:27:59,599 httpx INFO HTTP Request: POST http://localhost:8080/embeddings "HTTP/1.1 200 OK"
+00:27:59,599 httpx INFO HTTP Request: POST http://localhost:8080/embeddings "HTTP/1.1 200 OK"
+00:27:59,622 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 1.6215683210175484. input_tokens=542, output_tokens=0
+00:27:59,646 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 1.6458408581092954. input_tokens=586, output_tokens=0
+00:27:59,646 httpx INFO HTTP Request: POST http://localhost:8080/embeddings "HTTP/1.1 200 OK"
+00:27:59,670 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 1.6677236900432035. input_tokens=493, output_tokens=0
+00:28:00,518 httpx INFO HTTP Request: POST http://localhost:8080/embeddings "HTTP/1.1 200 OK"
+00:28:00,533 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 1.0609378980007023. input_tokens=175, output_tokens=0
+00:28:00,539 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_entities.parquet
+00:28:00,726 graphrag.index.run.workflow INFO dependencies for create_final_nodes: ['create_base_entity_graph']
+00:28:00,726 graphrag.utils.storage INFO read table from storage: create_base_entity_graph.parquet
+00:28:00,739 datashaper.workflow.workflow INFO executing verb create_final_nodes
+00:28:03,626 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_nodes.parquet
+00:28:03,837 graphrag.index.run.workflow INFO dependencies for create_final_communities: ['create_base_entity_graph']
+00:28:03,837 graphrag.utils.storage INFO read table from storage: create_base_entity_graph.parquet
+00:28:03,850 datashaper.workflow.workflow INFO executing verb create_final_communities
+00:28:03,876 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_communities.parquet
+00:28:04,30 graphrag.index.run.workflow INFO dependencies for create_final_relationships: ['create_base_entity_graph', 'create_final_nodes']
+00:28:04,30 graphrag.utils.storage INFO read table from storage: create_base_entity_graph.parquet
+00:28:04,39 graphrag.utils.storage INFO read table from storage: create_final_nodes.parquet
+00:28:04,52 datashaper.workflow.workflow INFO executing verb create_final_relationships
+00:28:04,66 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_relationships.parquet
+00:28:04,223 graphrag.index.run.workflow INFO dependencies for create_final_text_units: ['create_final_entities', 'create_final_relationships', 'create_base_text_units']
+00:28:04,223 graphrag.utils.storage INFO read table from storage: create_final_entities.parquet
+00:28:04,230 graphrag.utils.storage INFO read table from storage: create_final_relationships.parquet
+00:28:04,233 graphrag.utils.storage INFO read table from storage: create_base_text_units.parquet
+00:28:04,239 datashaper.workflow.workflow INFO executing verb create_final_text_units
+00:28:04,249 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_text_units.parquet
+00:28:04,402 graphrag.index.run.workflow INFO dependencies for create_final_community_reports: ['create_final_nodes', 'create_final_relationships']
+00:28:04,405 graphrag.utils.storage INFO read table from storage: create_final_nodes.parquet
+00:28:04,414 graphrag.utils.storage INFO read table from storage: create_final_relationships.parquet
+00:28:04,422 datashaper.workflow.workflow INFO executing verb create_final_community_reports
+00:28:04,433 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=1 => 50
+00:28:04,449 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=0 => 218
+00:28:07,118 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:07,121 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 2.6226748150074854. input_tokens=2363, output_tokens=426
+00:28:07,626 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:07,629 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 3.1279968600720167. input_tokens=2995, output_tokens=557
+00:28:08,56 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:08,59 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 3.5539667441044003. input_tokens=2885, output_tokens=502
+00:28:08,471 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:08,473 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 3.9770559079479426. input_tokens=2505, output_tokens=622
+00:28:09,566 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:09,567 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 5.064629253000021. input_tokens=3043, output_tokens=883
+00:28:11,894 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:11,896 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 2.310949614038691. input_tokens=2373, output_tokens=395
+00:28:12,578 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:12,581 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 2.9923030840000138. input_tokens=5347, output_tokens=528
+00:28:12,642 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:12,642 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 3.059918579994701. input_tokens=2837, output_tokens=529
+00:28:14,59 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:14,62 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 2.158296053064987. input_tokens=2148, output_tokens=399
+00:28:14,289 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:14,293 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 4.714425332960673. input_tokens=5222, output_tokens=788
+00:28:14,398 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:14,402 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 4.8204182899789885. input_tokens=4099, output_tokens=909
+00:28:16,234 httpx INFO HTTP Request: POST http://localhost:8080/chat/completions "HTTP/1.1 200 OK"
+00:28:16,235 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 3.644470893079415. input_tokens=4459, output_tokens=587
+00:28:16,243 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_community_reports.parquet
+00:28:16,419 graphrag.index.run.workflow INFO dependencies for create_final_documents: ['create_final_text_units']
+00:28:16,420 graphrag.utils.storage INFO read table from storage: create_final_text_units.parquet
+00:28:16,431 datashaper.workflow.workflow INFO executing verb create_final_documents
+00:28:16,437 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_documents.parquet
+00:28:16,459 graphrag.index.cli INFO All workflows completed successfully.
