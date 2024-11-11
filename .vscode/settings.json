@@ -1,7 +1,9 @@
 {
-    "python.testing.pytestArgs": [
-        "--rootdir=/home/cip/ce/ix05ogym/Majid/LLM/graphrag/graphrag/tests/"
-    ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "-s",
+        "--rootdir=/home/cip/ce/ix05ogym/Majid/LLM/graphrag/graphrag/",
+        
+    ]
 }
