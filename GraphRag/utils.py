@@ -5,13 +5,16 @@ from json_repair import loads
 import chromadb
 from chromadb import Documents, EmbeddingFunction, Embeddings
 
+cache_path = '/var/tmp/.cache/' 
+ciptmp_path ='/proj/ciptmp/ix05ogym/'
+#output_dir = cache_dir+'outputs/'
 
 #https://cookbook.chromadb.dev/core/document-ids/#uuids
 
 os.environ["OPENAI_API_KEY"] = "any"
 BASE_URL = "http://localhost:8080/"
 MODEL_NAME = "gpt-4o"
-client = chromadb.PersistentClient('chroma_docs')
+client = chromadb.PersistentClient(ciptmp_path+'chroma_docs')
 
 litellm.set_verbose = False
 def split_list(lst, chunk_size):
